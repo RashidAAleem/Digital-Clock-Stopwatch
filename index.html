@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Digital Clock & Stopwatch</title>
+</head>
+<body>
+    <main>
+        <section class="digitalClock">
+            <h2>Digital Clock</h2>
+            <div class="dateDay" id="dateDay">Date and Day</div>
+            <div class="time" id="content">Time</div>
+        </section>
+        <section class="StopWatch">
+            <h2>Stopwatch</h2>
+            <div class="stopWatch">
+                <p  >hh : mm : ss : ms</p>
+                <p class="display" id="display">00:00:00:00</p>
+                <button class="strtBtn">Start</button>
+                <button class="stpBtn">Stop</button>
+                <button class="rstBtn">Reset</button>
+                <button class="shwBtn">Show Time</button>
+                <button class="clrBtn">Clear Time</button>
+                <div class="displayTime" id="displayTime"></div>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

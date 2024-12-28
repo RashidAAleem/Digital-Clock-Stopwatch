@@ -1,0 +1,150 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: auto;
+    min-width: 300px;
+    background-color: #34495e;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.dateDay, .time {
+    margin: 10px 0;
+    border: none;
+    width: 90%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2c3e50;
+    border-radius: 10px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: #ecf0f1;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.dateDay {
+    background-color: #2980b9;
+    padding: 30px;
+}
+
+.time {
+    background-color: #27ae60;
+    padding: 30px;
+}
+
+.digitalClock h2, .StopWatch h2 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.StopWatch {
+    text-align: center;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.display{
+margin: 10px 10px;
+padding: 30px;
+    border: none;
+    width: 90%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2c3e50;
+    border-radius: 10px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: #ecf0f1;
+    font-size: 1.5rem;
+    font-weight: bold;
+/* background-color: #1284a0; */
+}
+.StopWatch button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #2980b9;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 1s ease;
+
+}
+
+.StopWatch button:hover {
+    background-color: #34dba3;
+}
+
+.StopWatch button:active{
+    scale: 0.90;
+    background-color: #d6382a;
+}
+
+.display {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+
+
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    section {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        width: 90%;
+    }
+
+    .dateDay, .time {
+        font-size: 1rem;
+    }
+
+    .digitalClock h2, .StopWatch h2 {
+        font-size: 1.5rem;
+    }
+
+    .StopWatch button {
+        font-size: 0.9rem;
+    }
+}
